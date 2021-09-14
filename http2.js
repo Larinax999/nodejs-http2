@@ -1,7 +1,5 @@
 const http2 = require('http2');
 const domain = "discord.com";
-const client = http2.connect(`https://${domain}`);
-let data = [];
 
 const fetch = (method,path,payload=null) => new Promise((resolve) => {
 	const client = http2.connect(`https://${domain}`);
